@@ -1,13 +1,13 @@
 <section id="sidebar">
 <?php
-if ( function_exists( 'the_custom_logo' ) ) {
-    echo '<div id="portrait">';
+echo '<div id="portrait">';
+if ( has_custom_logo() ) {
         the_custom_logo();
-    echo '</div>';
 }
 else{
-    echo '<img src="https://dummyimage.com/600x400/cccccc/fff.png">';
+    echo '<img src="https://dummyimage.com/120x120/cccccc/fff.png">';
 }
+echo '</div>';
 ?>
 
     <div id="sidebar-body">

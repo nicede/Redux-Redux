@@ -34,8 +34,8 @@ p{
 }
 
 hr{
-	border-top:1px solid #fff !important;
 	margin:10px 0px;
+    border-color:#3b627e;
 }
 
 li{

@@ -52,7 +52,7 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 /* Customizer */
 
 function redux_customize_register( $wp_customize ) {
-	$wp_customize->add_setting( 'text_color' , array(
+	$wp_customize->add_setting( 'main_text_color' , array(
 		'default'   => '#000',
 	) );
 	$wp_customize->add_setting( 'primary_color' , array(
@@ -65,8 +65,8 @@ function redux_customize_register( $wp_customize ) {
 		'default'   => '#eaeaea',
 	) );
 
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text_color', array(
-		'label'      => __( 'Text Color', 'redux' ),
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_text_color', array(
+		'label'      => __( 'Main Text Color', 'redux' ),
 		'section'	=>  'colors',
 	) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
@@ -90,11 +90,11 @@ function redux_customize_css()
 {
     ?>
          <style type="text/css">
-             body { background:<?php echo get_theme_mod('primary_color', '#3b627e'); ?>; }
-			 a,article footer div a{ color:<?php echo get_theme_mod('text_color', '#000'); ?>; }
-			 article,#sidebar-body{ color:<?php echo get_theme_mod('text_color', '#000'); ?>; }
+			 a,article footer div a{ color:<?php echo get_theme_mod('main_text_color', '#000'); ?>; }
+			 article,#sidebar-body{ color:<?php echo get_theme_mod('main_text_color', '#000'); ?>; }
 			 article a, #sidebar-body a, #content nav a{ color:<?php echo get_theme_mod('primary_color', '#3b627e'); ?> }
 			 .wp-block-social-links a{ color:#fff !important; }
+			 hr{ border-color:<?php echo get_theme_mod('content_secondary', '#000'); ?> !important; }
 			 article,#sidebar-body,#content nav a{ background:<?php echo get_theme_mod('content_background', '#fff'); ?> }
 			 article footer div{ background:<?php echo get_theme_mod('content_secondary', '#000'); ?>}
          </style>
