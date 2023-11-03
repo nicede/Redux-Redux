@@ -1,0 +1,170 @@
+/*
+Theme Name: Redux Redux
+Theme URI: https://tumblr.com
+Author: Nek
+Author URI: https://nek.zone
+Description: The classic Tumblr theme, for WordPress.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* BASICS */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#3b627e;
+    color:#fff;
+    font-family:Sans-serif;
+    font-size:0.9em;
+    padding:30px;
+}
+
+#wrapper{
+    max-width:850px;
+    clear:both;
+    margin:0 auto;
+}
+
+p{
+    margin:0.7em 0em;
+}
+
+hr{
+	border-top:1px solid #fff !important;
+	margin:10px 0px;
+}
+
+li{
+	list-style-position:inside;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* HEADER */
+
+#title{ 
+    text-shadow: 1px 3px 5px rgba(0,0,0, 0.5);
+    font-size:26px;
+    margin-bottom:30px;
+}
+
+#title a{ 
+    color:#fff;
+    text-decoration:none;
+}
+
+#title a:Hover{
+    position:relative;
+    top:2px;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 0.5);
+}
+
+/* POSTS */
+
+#content{
+    float:left;
+    width:64%;
+    margin-bottom:20px;
+}
+
+article{
+    background:#fff;
+    padding:15px;
+    color:#000;
+    font-size:0.9em;
+    margin-bottom:30px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.5);
+}
+
+article h2{
+    margin-bottom:0.8em;
+}
+
+article footer div{
+    background: #eaeaea;
+    padding:5px 10px;
+    font-size:0.9em;
+    margin-top:10px;
+}
+
+article footer div a{
+    color:#000;
+}
+
+/* PAGINATION */
+
+#content nav{
+    clear:both;
+} 
+
+#content nav a{
+    background-color: #fff;
+    color: #3b627e;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+#nextPage{
+    float:right;
+}
+
+#previousPage{
+    float:left;
+}
+
+/* SIDEBAR */
+
+#sidebar{
+    float:right;
+    position:relative;
+    width:30%;
+}
+
+#sidebar-body{
+    background:#fff;
+    color:#000;
+    padding:15px;
+    padding-top:120px;
+}
+
+#portrait{
+    position:absolute;
+    top:-20px;
+    left:15px;
+    background:#fff;
+    padding:5px;
+    box-shadow:2px 3px 5px rgba(0,0,0,0.5);
+}
+
+.widget{
+    margin:1em 0px;
+}
+
+#sidebar footer{
+    margin-top:10px;
+    text-shadow:2px 2px 4px #000;
+}
+
+/* MAKE MEDIA WORK LIKE IT SHOULD */
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width:680px ){
+    #content, #sidebar{ float:none; width:100%; }
+    #sidebar{ margin-top:100px; }
+}
