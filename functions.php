@@ -97,6 +97,7 @@ function redux_customize_css()
 			 hr{ border-color:<?php echo get_theme_mod('content_secondary', '#000'); ?> !important; }
 			 article,#sidebar-body,#content nav a{ background:<?php echo get_theme_mod('content_background', '#fff'); ?> }
 			 article footer div{ background:<?php echo get_theme_mod('content_secondary', '#000'); ?>}
+			 .is-style-fill .wp-element-button{ background:<?php echo get_theme_mod('content_secondary', '#000'); ?>; }
          </style>
     <?php
 }
