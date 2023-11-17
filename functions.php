@@ -96,7 +96,7 @@ function redux_customize_css()
 			 .wp-block-social-links a{ color:#fff !important; }
 			 hr{ border-color:<?php echo get_theme_mod('content_secondary', '#000'); ?> !important; }
 			 article,#sidebar-body,#content nav a{ background:<?php echo get_theme_mod('content_background', '#fff'); ?> }
-			 article footer div{ background:<?php echo get_theme_mod('content_secondary', '#000'); ?>}
+			 article footer div{ background:<?php echo get_theme_mod('content_secondary', '#eaeaea'); ?>}
 			 .is-style-fill .wp-element-button{ background:<?php echo get_theme_mod('content_secondary', '#000'); ?>; }
          </style>
     <?php
